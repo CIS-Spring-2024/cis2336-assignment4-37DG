@@ -1,0 +1,383 @@
+/* BASE */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h3, a, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    font-weight: 600;
+}
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+}
+h1 {
+    color: black;
+    font-family:"League Gothic", sans-serif;
+    font-size: 45pt;
+}
+
+.layer1 {
+    background-color: rgb(117, 213, 184);
+}
+
+.layer2 {
+    background-color: rgb(131, 236, 205);
+}
+
+.layer3 {
+    background-color: rgb(130, 255, 210);
+}
+
+
+/* HEADER */
+
+header {
+    min-height: fit-content;
+    width: 100%;
+    padding: 35px 10px 15px 10px;
+}
+header h1 {
+    white-space: pre;
+    display: inline-block;
+}
+
+/* NAV */
+
+nav {
+    display: inline-flex;
+    transform: translateY(-15px);
+    padding-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+}
+nav a {
+    color: white;
+    font-size: 14pt;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+nav h1 {
+    font-size: 26pt;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+#divider {
+    color: rgb(92, 171, 147);
+    font-size: 25pt;
+    padding: 4px;
+}
+#currentpage {
+    color: lightgray;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(98, 177, 154);
+    padding: 50px 50px 20px 50px;
+
+}
+footer p {
+    font-weight: 300;
+    font-size: 8pt;
+}
+
+/* MENU */
+
+#tabselect .curtab {
+    background-color: rgb(135, 240, 209);
+    color: black;
+}
+#tabselect {
+    margin: 50px 0px 0px 40px;
+    padding: 1px;
+    width: fit-content;
+    border-radius: 20px;
+}
+#tabselect * {
+    letter-spacing: 1px;
+    display: inline-block;
+}
+#tabselect h1 {
+    color: rgb(69, 124, 107);
+    padding: 10px;
+    border-radius: 20px;
+}
+#tabselect p {
+    font-size: 40pt;
+    transform: translateY(-5px);
+}
+
+#orderform {
+    margin: -12px 10px 0px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.orderitem {
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(140, 255, 220);
+    border: 3px;
+    border-color: rgb(115, 115, 115);
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.orderitem * {
+    width: 100%;
+}
+.orderitem img {
+    width: 80%;
+    padding: 10%;
+}
+.orderitem h3 {
+    font-size: 28pt;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: rgb(50, 50, 50);
+}
+.orderitem p {
+    width: 90%;
+    margin: auto;
+    padding: 40px 10px 40px 10px;
+}
+
+#orderSubmit {
+    height: 50px;
+    width: 200px;
+    margin: 10px 0px 20px 0px;
+    padding: 0px;
+    border-radius: 10px;
+    background-color: rgb(140, 255, 220);
+    border: 3px;
+    border-color: rgb(115, 115, 115);
+    border-style: solid;
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+#mainmenu {
+    display: grid;
+}
+
+#tabs {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    animation: 0.25s linear fadein;
+}
+
+/* DETAILS */
+
+#openitem {
+    display: none;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    animation: 0.25s linear fadein;
+    margin: 10px;
+    border: 3px;
+    border-color: rgb(115, 115, 115);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2px;
+}
+#openitem div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#imgblock {
+    height: 100%;
+    width: 40%;
+    margin: auto;
+}
+#imgblock img {
+    height: auto;
+    width: 800px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#wordblock {
+    height: 100%;
+    width: 56%;
+    margin: auto;
+    margin-left: 5px;
+}
+#wordblock h3 {
+    text-align: left;
+    margin: 15% 0% 20px 5%;
+    font-size: 38pt;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: rgb(50, 50, 50);
+    width: 100%;
+}
+#wordblock p {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 23pt;
+    padding-bottom: 0px;
+    vertical-align: middle;
+    width: 90%;
+    margin: auto;
+}
+.exit {
+    position: absolute;
+    vertical-align: top;
+    top: 5px;
+    right: 5px;
+    padding: 5px 8px 3px 8px;
+    background-color: rgb(131, 236, 205);
+    border: 2px;
+    border-color: rgb(115, 115, 115);
+    border-radius: 8px;
+    border-style: solid;
+    width: auto;
+    height: auto;
+    font-size: large;
+}
+
+#wordblock #additem {
+    border-width: 2px;
+    width: fit-content;
+    height: auto;
+    margin-top: 30px;
+
+    background-color: lightgray;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
+#wordblock #additem * {
+    display: inline-block;
+    vertical-align: middle;
+}
+#wordblock #additem p {
+    padding: 9px;
+    margin: -8px;
+    width: 50px;
+
+    transform: translateY(-2px);
+}
+#wordblock #additem button {
+    width: 30px;
+    height: 100%;
+    background-color: lightgray;
+    border: none;
+    font-size: 30px;
+
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+}
+#wordblock #decbtn {
+    transform: translateY(-2px);
+}
+
+/* CHECKOUT */
+
+#checkout {
+    display: none;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    animation: 0.25s linear fadein;
+    margin: 10px;
+    border: 3px;
+    border-color: rgb(115, 115, 115);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#checkout h3 {
+    font-size: 50pt;
+    font-weight: 800;
+    font-family: 'League Gothic', sans-serif;
+    margin: 5px 0px 0px 0px;
+}
+#orderSummary {
+    max-width: 40%;
+    margin: auto;
+}
+.summary {
+    font-weight: 550;
+    padding: 5px 0px 5px 0px;
+    transform: translateX(-30px);
+}
+.summary * {
+    display: inline-block;
+}
+.summary .itemLabel {
+    width: 50%;
+    text-align: right;
+}
+.summary .itemNum {
+    margin-left: 15px;
+    text-align: left;
+}
+.summary .remBtn {
+    background-color: rgb(131, 236, 205);
+    border: none;
+    font-size: 16px;
+    margin-left: 15px;
+    transform: translateY(-3px);
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#checkoutSubmit {
+    padding: 0px;
+    height: 50px;
+    width: 200px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+    background-color: rgb(140, 255, 220);
+    border: 3px;
+    border-color: rgb(115, 115, 115);
+    border-style: solid;
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+#costs {
+    margin: 25px;
+}
+#costs h2 {
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#costs h1 {
+    margin-top: 5px;
+    font-size: 55pt;
+}

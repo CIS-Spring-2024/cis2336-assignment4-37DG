@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-backend",
+  "version": "1.0.0",
+  "description": "1.This assignment is graded.\r 2.please follow the instructions file posted on canvas\r 3.Upload your work to canvas and push all your files to your repository.\r 4.clone this repository and start working on the Assignmnet-4&5",
+  "main": "./JS/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager Hall - Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Gothic">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<!-- TOP -->
+
+<header class="layer1">
+    <div id="title">
+        <h1>University of Houston </h1>
+        <h1>Sugar Land Cafeteria</h1>
+    </div>
+</header>
+<nav id="navbar" class="layer1">
+    <h1>VOYAGER HALL</h1>
+    <a id="currentpage">HOME</a>
+    <p id="divider">|</p>
+    <a href="bio.html">ABOUT</a>
+    <p id="divider">|</p>
+    <a href="order.html">ORDER</a>
+</nav>
+
+<!-- BODY -->
+
+<body class="layer1">
+    
+    <div id="deal" class="layer2">
+        <h3>Monthly deal:</h3>
+        <h3>BUY TWO BITES</h3>
+        <h3>GET. ONE. FREE.</h3>
+    </div>
+
+    <section id="main_pic">
+        <img src="../Image/americana.jpg" alt="Interior of restaurant building">
+    </section>
+    
+    <section id="ad_boxes">
+    
+        <div id="dining">
+            <h2>Dining Options</h2>
+            <img src="../Image/clipart.avif" alt="Icon of plate and cutlery">
+            <p class="layer2">
+                We take pride in our menu. Originally a fast food experience,
+                our food preparation is optimized to bring your food quickly 
+                without compromising taste. Our newly revamped menu, containing 
+                more conventional and filling dishes, brings even more options 
+                to your table.
+            </p>
+        </div>
+    
+        <div id="reservations">
+            <h2>Reservations</h2>
+            <img src="../Image/celebrationclipart.png" alt="Icon of a party popper"">
+            <p class="layer2">
+                Celebrating a birthday or the completion of a group project?
+                Reserve a table (or multiple!) and enjoy a comfortable
+                environment in a convenient on-campus location. We also 
+                offer personalized amenities for birthdays, graduation 
+                celebrations, and many holidays.
+            </p>
+        </div>
+    
+        <div id="relaxing">
+            <h2>Relaxing Interior</h2>
+            <img src="../Image/relaxingclipart.png" alt="Icon of an umbrella and a beach chair">
+            <p class="layer2">
+                Perfect for studying or just plain relaxing, our interior 
+                provides a comfortable environment to assist in whatever you need.
+                Order some finger food and a drink to give you the energy to 
+                ace that practice test or nail that essay. Just take a table, alone
+                or as a group, and enjoy your stay!
+            </p>
+        </div>
+    
+    </section>
+
+    <section id="non-interactive_menu" class="layer2">
+    
+        <div id="order_header">
+            <h1>Ordering Information</h1>
+            <h3>Voyager Hall offers a varied menu for students at the University of Houston - Sugar Land campus.</h3>    
+        </div>
+    
+        <div id="menu_description">
+            <div id="bites">
+                <h3>Bites</h3>
+                <p>Small dishes that are both fast to make and easy to eat. Ideal for the busy student before or between classes.</p>
+            </div>
+            <div id="meals">
+                <h3>Meals</h3>
+                <p>Filling dishes that are made to be eaten inside Voyager Hall. Ideal for early students or those finished with classes.</p>
+            </div>
+        </div>
+    
+        <table>
+            <tr>
+                <th id="menu_header" class="layer3">Bites</th>
+                <th id="menu_header" class="layer3">Meals</th>
+            </tr>
+            <tr>
+                <th>Thick-cut French Fries</th>
+                <th>Grilled Chicken Salad</th>
+            </tr>
+            <tr>
+                <th>Voyager Calzone</th>
+                <th>Hearty Burger and Fries</th>
+            </tr>
+            <tr>
+                <th>Palm Sliders</th>
+                <th>Spicy Meatball Sub</th>
+            </tr>
+        </table>
+        <div id="onlineorder">
+            <a href="order.html">An online ordering menu is now available here!</a>
+        </div>
+    </section>
+
+    <div id="contact">
+        <h2>Want to stay up to date on Voyager Hall? Subscribe to the weekly newsletter:</h2>
+        <div>
+            <form method="post">
+                <fieldset style="border-width: 0px;">
+                    <input type="email" required id="email" class="layer3" placeholder="E-Mail">
+                    <input type="submit" id="submit_button" class="layer3">
+                </fieldset>
+            </form>
+        </div>
+        <div id="newsletter_list">
+            <p>The newsletter includes:</p>
+            <ul>
+                <li>Changes to Voyager Hall</li>
+                <li>Exclusive deals for subscribers</li>
+                <li>Events and holiday celebrations</li>
+                <li>And much more!</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>
+        This website and its owner are unaffiliated with the University of Houston.
+        All information presented on this page and its linked subpages is false and 
+        not made by any representative of the University of Houston administration.
+    </p>
+    <p>
+        This is a work of fiction. Any resemblance to a subject, real or fake, 
+        is purely coincidental.
+    </p>
+</footer>
+
+<script>
+    /* Interactive links */
+    let links = document.querySelectorAll("a");
+    links.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.color = "lightgray";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.color = "";
+        })
+    });
+
+    /* Interactive table */
+    let telements = document.querySelectorAll("th");
+    telements.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.backgroundColor = "rgb(153,255,230)";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.backgroundColor = "";
+        })
+    });
+
+    /* Interactive submit button */
+    document.querySelector("#submit_button").addEventListener("mouseover", function(e) {
+        this.style.backgroundColor = "rgb(153,255,230)";
+    });
+    document.querySelector("#submit_button").addEventListener("mouseout", function(e) {
+        this.style.backgroundColor = "";
+    });
+
+    /* Form response handling and interaction */
+    document.getElementById("submit_button").addEventListener("click", function(e) {
+        e.preventDefault();
+        let email = document.querySelector("#email");
+        if (email.value) {
+            alert('Newsletter registration submitted!');
+            email.style.borderColor = "";
+        }
+        else {
+            alert('Please enter your E-Mail.')
+            email.style.borderColor = "red";
+        }
+    });
+</script>
+</html>

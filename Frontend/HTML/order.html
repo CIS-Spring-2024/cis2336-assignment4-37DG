@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voyager Hall - Order</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Gothic">
+        <link rel="stylesheet" href="../CSS/order.css">
+</head>
+
+<!-- TOP -->
+
+<header class="layer1">
+    <div id="title">
+        <h1>University of Houston </h1>
+        <h1>Sugar Land Cafeteria</h1>
+    </div>
+</header>
+<nav id="navbar" class="layer1">
+    <h1>VOYAGER HALL</h1>
+    <a href="home.html">HOME</a>
+    <p id="divider">|</p>
+    <a href="bio.html">ABOUT</a>
+    <p id="divider">|</p>
+    <a id="currentpage">ORDER</a>
+</nav>
+
+<!-- BODY -->
+
+<body class="layer1">
+    <div id="tabselect" class="layer2">
+        <h1>BITES</h1>
+        <p>|</p>
+        <h1>MEALS</h1>
+    </div>
+    
+    <form method="post" id="orderform" class="layer2">
+    
+        <div id="mainmenu">
+            <!--Initial structure for the dynamic menu-->
+            <div id="tabs">
+                <section id="tab1">
+                </section>
+                <section id="tab2">
+                </section>
+            </div>
+        
+            <!--Initial structure for the detail pane-->
+            <div id="openitem">
+                <div id="imgblock">
+                    <img>
+                </div>
+                <div id="wordblock">
+                    <h3></h3>
+                    <p></p>
+                    <div id="additem">
+                        <button id="decbtn">-</button>
+                        <p id="orderAmt">0</p>
+                        <button id="incbtn">+</button>
+                    </div>
+                </div>
+                <button class="exit">X</button>
+            </div>
+        
+            <div id="checkout">
+                <button class="exit">X</button>
+                <h3>CHECKOUT:</h3>
+                <div id="orderSummary">
+                </div>
+                <div id="costs">
+                    <h2 id="finalPrice">Order: $</h2>
+                    <h2 id="finalTax">Tax: $</h2>
+                    <h1 id="finalTotal">Total: $</h1>
+                </div>
+                <h2 id="price"></h2>
+                <button id="checkoutSubmit" type="submit">CONFIRM</button>
+            </div>
+        </div>
+    
+        <div>
+            <button type="submit" id="orderSubmit">CHECKOUT</button>
+        </div>
+    
+    </form>
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>
+        This website and its owner are unaffiliated with the University of Houston.
+        All information presented on this page and its linked subpages is false and 
+        not made by any representative of the University of Houston administration.
+    </p>
+    <p>
+        This is a work of fiction. Any resemblance to a subject, real or fake, 
+        is purely coincidental.
+    </p>
+</footer>
+
+<script type="text/javascript" src="../JS/order.js"></script>
+
+</html>

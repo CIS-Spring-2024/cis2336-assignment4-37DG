@@ -1,0 +1,130 @@
+/* BASE */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h3, a, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    font-weight: 600;
+}
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+}
+h1 {
+    color: black;
+    font-family:"League Gothic", sans-serif;
+    font-size: 45pt;
+}
+
+.layer1 {
+    background-color: rgb(117, 213, 184);
+}
+
+.layer2 {
+    background-color: rgb(131, 236, 205);
+}
+
+.layer3 {
+    background-color: rgb(130, 255, 210);
+}
+
+
+/* HEADER */
+
+header {
+    min-height: fit-content;
+    width: 100%;
+    padding: 35px 10px 15px 10px;
+}
+header h1 {
+    white-space: pre;
+    display: inline-block;
+}
+
+/* NAV */
+
+nav {
+    display: inline-flex;
+    transform: translateY(-15px);
+    padding-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+}
+nav a {
+    color: white;
+    font-size: 14pt;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+nav h1 {
+    font-size: 26pt;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+#divider {
+    color: rgb(92, 171, 147);
+    font-size: 25pt;
+    padding: 4px;
+}
+#currentpage {
+    color: lightgray;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(98, 177, 154);
+    padding: 50px 50px 20px 50px;
+
+}
+footer p {
+    font-weight: 300;
+    font-size: 8pt;
+}
+
+/* BIO */
+
+#bio {
+    text-align: center;
+    margin: 10px;
+    padding-top: 80px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+#bio img {
+    background-color: white;
+    border-radius: 50%;
+}
+#bio p {
+    padding: 30px;
+    font-weight: 600;
+    font-size: 18pt;
+    margin: auto;
+}
+
+#bio #about {
+    margin-top: 100px;
+}
+#bio #about p {
+    font-weight: 400;
+    font-size: 18pt;
+    margin: auto;
+
+}
+#bio #about h3 {
+    padding: 30px;
+    font-weight: 600;
+    font-size: 16pt;
+    letter-spacing: -1px;
+}
+

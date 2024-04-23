@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager Hall - Bio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Gothic">
+    <link rel="stylesheet" href="../CSS/bio.css">
+</head>
+
+<!-- TOP -->
+
+<header class="layer1">
+    <div id="title">
+        <h1>University of Houston </h1>
+        <h1>Sugar Land Cafeteria</h1>
+    </div>
+</header>
+<nav id="navbar" class="layer1">
+    <h1>VOYAGER HALL</h1>
+    <a href="home.html">HOME</a>
+    <p id="divider">|</p>
+    <a id="currentpage">ABOUT</a>
+    <p id="divider">|</p>
+    <a href="order.html">ORDER</a>
+</nav>
+
+<!-- BODY -->
+
+<body class="layer1">
+    <div id="bio" class="layer2">
+        <img src="../Image/biophoto.jpeg">
+        <h3>
+            The Voyager Hall is currently managed by owner Daniel Garza.
+        </h3>
+        <div id="about">
+            <p>
+                The Hall began as an idea on keeping students focused in class at the University of Houston - Sugar Land campus. While the cafeteria inside of 
+                the Brazos building was suitable for an early or local student wanting lunch, anyone who might have just arrived on campus could be unable to eat 
+                before their class starts.
+            </p>
+            <p>
+                For example, students coming from the main campus would have to set aside 40+ minutes on their daily schedule, leaving less time to eat before classes 
+                start. The hall was first made to support these "Voyagers" in their classes by removing the distraction that prolonged hunger brings.
+            </p>
+            <h3>
+                Thus, Voyager Hall was born.
+            </h3>
+            <p>
+                The Meals were later introduced due to Voyager Hall's increased popularity with students seeking something to eat before driving or shuttling home. To 
+                this goal, we strive to create dishes that are filling, enjoyable, and relatively quick to prepare.
+            </p>
+        </div>
+    </div>
+</body>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>
+        This website and its owner are unaffiliated with the University of Houston.
+        All information presented on this page and its linked subpages is false and 
+        not made by any representative of the University of Houston administration.
+    </p>
+    <p>
+        This is a work of fiction. Any resemblance to a subject, real or fake, 
+        is purely coincidental.
+    </p>
+</footer>
+
+<script>
+    /* Interactive links */
+    let links = document.querySelectorAll("a");
+    links.forEach(element => {
+        element.addEventListener("mouseover", function(e) {
+            this.style.color = "lightgray";
+        });
+        element.addEventListener("mouseout", function(e) {
+            this.style.color = "";
+        })
+    });
+</script>
+</html>
